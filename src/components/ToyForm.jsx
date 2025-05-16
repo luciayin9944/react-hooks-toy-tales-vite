@@ -27,7 +27,7 @@ function ToyForm({ toys, setToys }) {
       body: JSON.stringify(newListing)
     })
       .then(res => res.json())
-      .then(newToys => setToys([...toys, newListing]))
+      .then(newListing => setToys([...toys, newListing]))
   }
 
 
